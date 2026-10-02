@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Discover Bible Prophecy</title>
+
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background: #ffffff;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(7, 20, 39, 0.78),
+            rgba(7, 20, 39, 0.78)
+        ),
+        url("prophesy.png");
+
+    /*
+       Instead of "cover", we use 100% auto.
+       This prevents the image from being zoomed
+       excessively and chopping off Christ's head.
+    */
+
+    background-size: 100% auto;
+
+    background-position: center top;
+
+    background-repeat: no-repeat;
+
+    /*
+       Gives the image a dark background if the
+       screen is taller than the image.
+    */
+
+    background-color: #071427;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+
+    position: relative;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+    width: 100%;
+    max-width: 900px;
+
+    /*
+       Keeps the text away from the very top
+       of the image.
+    */
+
+    padding: 80px 0;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #fbbf24;
+    font-weight: 700;
+}
+
+
+/* =========================
+   HERO TITLE
+========================= */
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+
+/* =========================
+   HERO PARAGRAPH
+========================= */
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    margin-top: 35px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    background: #f59e0b;
+    color: white;
+    text-decoration: none;
+
+    padding: 16px 32px;
+
+    border-radius: 8px;
+
+    display: inline-block;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background: #d97706;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+.card {
+    background: #f8fafc;
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   QUESTIONS
+========================= */
+
+.questions {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+.question {
+    padding: 25px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    background: white;
+
+    transition: 0.3s;
+}
+
+.question:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.06);
+}
+
+
+/* =========================
+   STUDY GUIDE
+========================= */
+
+.study-guide {
+    background: #0f172a;
+    color: white;
+}
+
+.study-wrapper {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.mockup {
+
+    background: white;
+
+    color: #0f172a;
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-box {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.form-box input {
+
+    margin-bottom: 15px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    width: 100%;
+
+    font-size: 1rem;
+}
+
+.form-box button {
+
+    padding: 15px;
+
+    background: #f59e0b;
+
+    border: none;
+
+    color: white;
+
+    border-radius: 8px;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.form-box button:hover {
+    background: #d97706;
+}
+
+
+/* =========================
+   LESSONS
+========================= */
+
+.lessons {
+
+    display: grid;
+
+    gap: 20px;
+}
+
+.lesson {
+
+    padding: 20px;
+
+    border-left:
+        4px solid #f59e0b;
+
+    background: #f8fafc;
+
+    border-radius: 0 8px 8px 0;
+}
+
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonials {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+}
+
+.testimonial {
+
+    padding: 30px;
+
+    background: #f8fafc;
+
+    border-radius: 16px;
+}
+
+
+/* =========================
+   FINAL CTA
+========================= */
+
+.final-cta {
+
+    background: #0f172a;
+
+    color: white;
+
+    text-align: center;
+}
+
+.final-cta h2 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    background: #071427;
+
+    color: #94a3b8;
+}
+
+
+.footer-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.footer-title {
+
+    font-size: 0.95rem;
+}
+
+
+/* =========================
+   FACEBOOK LINK
+========================= */
+
+.facebook-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    font-size: 0.95rem;
+
+    transition: 0.3s ease;
+}
+
+
+.facebook-link:hover {
+
+    color: #fbbf24;
+
+    transform: translateY(-2px);
+}
+
+
+.facebook-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 30px;
+
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: #1877F2;
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    line-height: 1;
+}
+
+
+/* =====================================================
+   WIDE FULLSCREEN MONITORS
+===================================================== */
+
+@media (min-aspect-ratio: 16/9) {
+
+    .hero {
+
+        /*
+           Keep the top of the image visible.
+           This is especially important for Christ's head.
+        */
+
+        background-size: 100% auto;
+
+        background-position: center top;
+    }
+
+}
+
+
+/* =====================================================
+   STANDARD DESKTOP / LAPTOP
+===================================================== */
+
+@media (min-aspect-ratio: 4/3)
+       and (max-aspect-ratio: 16/9) {
+
+    .hero {
+
+        background-size: 100% auto;
+
+        background-position: center top;
+    }
+
+}
+
+
+/* =====================================================
+   TALL SCREENS
+===================================================== */
+
+@media (max-aspect-ratio: 4/3) {
+
+    .hero {
+
+        background-size: auto 100%;
+
+        /*
+           Slightly favor the top of the image.
+        */
+
+        background-position: center top;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        min-height: 100svh;
+
+        /*
+           On phones, use the image height to avoid
+           aggressively cropping the artwork.
+        */
+
+        background-size: auto 100%;
+
+        background-position: center top;
+
+        background-repeat: no-repeat;
+    }
+
+
+    .hero-content {
+
+        padding: 60px 20px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 2.3rem;
+    }
+
+
+    .hero p {
+
+        font-size: 1rem;
+    }
+
+
+    .study-wrapper {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .section {
+
+        padding: 60px 0;
+    }
+
+
+    .final-cta h2 {
+
+        font-size: 2rem;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SHORT FULLSCREEN SCREENS
+   Example: ultrawide monitors
+===================================================== */
+
+@media (max-height: 600px) {
+
+    .hero-content {
+
+        padding: 40px 20px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 2.8rem;
+    }
+
+
+    .hero p {
+
+        font-size: 1rem;
+    }
+
+
+    .cta {
+
+        margin-top: 20px;
+    }
+
+}
+
+
+/* =====================================================
+   FULLSCREEN API SUPPORT
+===================================================== */
+
+/*
+   When the browser enters fullscreen, make sure the
+   hero still fills the screen without forcing the
+   background image to crop vertically.
+*/
+
+:fullscreen .hero {
+
+    min-height: 100vh;
+
+    background-size: 100% auto;
+
+    background-position: center top;
+
+}
+
+
+/* Safari / WebKit fullscreen support */
+
+:-webkit-full-screen .hero {
+
+    min-height: 100vh;
+
+    background-size: 100% auto;
+
+    background-position: center top;
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div class="logo">
+            DISCOVER BIBLE PROPHECY
+        </div>
+
+
+        <h1>
+            Discover What Bible Prophecy
+            Really Says About Our Future
+        </h1>
+
+
+        <p>
+            Free Bible studies exploring Daniel,
+            Revelation, world events, and God's
+            plan for humanity.
+
+            Study at your own pace from anywhere.
+        </p>
+
+
+        <div class="cta">
+
+            <a href="#signup" class="btn">
+                Start Free Study
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     WHY STUDY
+========================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Why Thousands Study Bible Prophecy
+        </h2>
+
+
+        <div class="features">
+
+
+            <div class="card">
+
+                <h3>
+                    📖 Bible Based
+                </h3>
+
+                <p>
+                    Every lesson is grounded
+                    in Scripture.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    🎁 Completely Free
+                </h3>
+
+                <p>
+                    No cost and no obligation.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    ✨ Hope Filled
+                </h3>
+
+                <p>
+                    Discover God's promises
+                    for the future.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     QUESTIONS
+========================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Questions Millions Are Asking
+        </h2>
+
+
+        <div class="questions">
+
+
+            <div class="question">
+                what do prophesy's symbols really mean?
+            </div>
+
+
+            <div class="question">
+                👑 Are the global powers aligning as Revelation predicted?
+            </div>
+
+
+            <div class="question">
+                ⏳ Clear eye-opening explanations
+            </div>
+
+
+            <div class="question">
+                ☁️ No sensationalism - solid, biblical insight
+            </div>
+
+
+            <div class="question">
+                🏛️ open discussion + Q&A
+            </div>
+
+
+            <div class="question">
+                🕊️ All welcome!
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SIGNUP / STUDY GUIDE
+========================= -->
+
+<!-- <section
+    id="signup"
+    class="section study-guide"
+>
+
+    <div class="container">
+
+        <div class="study-wrapper">
+
+
+            <div class="mockup">
+
+                <h2>
+                    Free Study Guide
+                </h2>
+
+                <br>
+
+                <p>
+                    Receive your first Bible
+                    prophecy lesson and begin
+                    your journey of discovering
+                    God's plan for the future.
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <h2>
+                    Get your invitaion today!
+                </h2>
+
+                <br>
+
+
+                
+                    Replace YOUR_FORM_ID with
+                    your actual Formspree ID.
+                
+
+
+                <form
+                    class="form-box"
+                    action="https://formspree.io/f/YOUR_FORM_ID"
+                    method="POST"
+                >
+
+
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="First Name"
+                        required
+                    >
+
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                        required
+                    >
+
+
+                    <button type="submit">
+                        Send invitation
+                    </button>
+
+
+                </form>
+
+
+                <br>
+
+
+                <p style="opacity:0.8;">
+
+                    We respect your privacy.
+                    Unsubscribe at any time.
+
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section> --> 
+
+
+
+<!-- =========================
+     LESSONS
+========================= -->
+
+<!-- <section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            What You'll Learn
+        </h2>
+
+
+        <div class="lessons">
+
+
+            <div class="lesson">
+                What do prophesy's symbols really mean?
+            </div>
+
+
+            <div class="lesson">
+               Are global power aligning as REvelation predicted?
+            </div>
+
+
+            <div class="lesson">
+                cleasr
+            </div>
+
+
+            <div class="lesson">
+                Lesson 4 – Signs of Christ's Return
+            </div>
+
+
+            <div class="lesson">
+                Lesson 5 – God's Plan for the Future
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section> -->
+
+
+
+<!-- =========================
+     TESTIMONIALS
+========================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Student Experiences
+        </h2>
+
+
+        <div class="testimonials">
+
+
+            <div class="testimonial">
+
+                "These lessons helped me
+                understand Revelation
+                for the first time."
+
+            </div>
+
+
+            <div class="testimonial">
+
+                "The studies were simple,
+                clear, and Bible based."
+
+            </div>
+
+
+            <div class="testimonial">
+
+                "I found hope and confidence
+                in God's promises."
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FINAL CTA
+========================= -->
+
+<section class="section final-cta">
+
+    <div class="container">
+
+        <h2>
+            Ready to Discover Bible Truth?
+        </h2>
+
+
+        <a
+            href="#signup"
+            class="btn"
+        >
+            Start Free Study
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-title">
+            © 2026 Discover Bible Prophecy
+        </div>
+
+        <a
+            href="https://www.facebook.com/profile.php?id=61591378839594"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="facebook-link"
+            aria-label="Visit Discover Bible Prophecy on Facebook"
+        >
+
+            <span class="facebook-icon">
+                f
+            </span>
+
+            <span>
+                Follow us on Facebook
+            </span>
+
+        </a>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
